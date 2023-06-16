@@ -1,0 +1,117 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 2rem;
+  background: white;
+  font-family: sans-serif;
+  padding: 8rem;
+  overflow: hidden;
+}
+
+main{
+  width: 100%;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: popup;
+  animation-duration: 0.8s;
+  animation-delay: 1.5s;
+}
+
+.games{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.game{
+  list-style: none;
+  width: 25rem;
+  height: 30rem;
+  transition: 0.2s transform;
+  flex-grow: 1;
+}
+
+.game:hover{
+  transform: scale(1.02) translateY(-0.7rem);
+  cursor: pointer;
+}
+
+.game img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.inputs{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4rem;
+  width: 100%;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.inputs > div{
+  display: flex;
+  align-items: center;
+  width: 40rem;
+}
+
+
+.filter{
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2rem;
+  -webkit-appearance: none;
+  background: #eee;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 0.5rem 0 rgba(0,0,0,0.2);
+  appearance: none;
+}
+
+.filter:hover{
+  cursor: pointer;
+}
+
+.label:hover{
+  cursor: pointer;
+}
+
+.filter:checked{
+  background: #a492b2;
+}
+
+.filter:checked ~ .label{
+  text-decoration: underline;
+}
+
+@keyframes away{
+  from{
+    transform: scaleX(1);
+  }
+
+  to{
+    transform: scaleX(0);
+  }
+
+}
+
+@keyframes popup{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

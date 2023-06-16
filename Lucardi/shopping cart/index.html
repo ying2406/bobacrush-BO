@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5476467842.js" crossorigin="anonymous"></script>
+    <title>shopping cart</title>
+    <script src="app.js" defer></script>
+
+</head>
+
+<body>
+    <section id="js--checkoutWindow" class="checkout a-popup">
+        <ul class="checkout_list">
+            <li class="checkout_listitem">
+                <img src="img/boba1.webp" alt="pandora sieraad van buzz lightyear" class="checkout_img">
+                <p class="checkouts_title">Tropical Mango SPECIAL</p>
+                <p id="js--amount-buzz" class="checkout_amount"></p>
+                <p id="js--amount-buzz-total" class="checkout_amount-total"></p>
+            </li>
+            <li class="checkout_listitem">
+                <img src="img/boba2.webp" alt="pandora sieraad van iron man" class="checkout_img">
+                <p class="checkouts_title">Strawberry mint</p>
+                <p id="js--amount-ironman" class="checkout_amount"></p>
+                <p id="js--amount-ironman-total" class="checkout_amount-total"></p>
+            </li>
+            <li class="checkout_listitem">
+                <img src="img/boba3.webp" alt="pandora sieraad van C3PO" class="checkout_img">
+                <p class="checkouts_title">Creme brulee</p>
+                <p id="js--amount-c3po" class="checkout_amount"></p>
+                <p id="js--amount-c3po-total" class="checkout_amount-total"></p>
+            </li>
+        </ul>
+    </section>
+    <article class="modal a-popup" id="js--shoppingModal">
+        &#10003; Added to Cart
+    </article>
+    <button id="js--checkoutbutton" class="shoppinCart">
+        <i id="js--cartIcon" class="fa-solid fa-cart-shopping"></i>
+        <i id="js--arrowIcon" class="fa-solid fa-angles-left"></i>
+        <div class="shoppinCart_message">0</div>
+    </button>
+    <main>
+        <ul class="game">
+            <li class="games_game a-popup">
+                <figure class="games_figure">
+                    <img src="img/boba1.webp" alt="pandora sieraad van buzz lightyear" class="games_img">
+                </figure>
+                <section class="games_body">
+                    <h2 class="games_h2">€12.50</h2>
+                    <h3 class="games_h3">Tropical Mango SPECIAL</h3>
+                    <div class="games_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <button data-product="buzz" class="games_button">add to cart</button>
+                </section>
+            </li>
+            <li class="games_game a-popup">
+                <figure class="games_figure">
+                    <img src="img/boba2.webp" alt="pandora sieraad van iron man" class="games_img">
+                </figure>
+                <section class="games_body">
+                    <h2 class="games_h2">€14.50</h2>
+                    <h3 class="games_h3">Strawberry mint</h3>
+                    <div class="games_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <button data-product="iron" class="games_button">add to cart</button>
+                </section>
+            </li>
+            <li class="games_game a-popup games_game--third">
+                <figure class="games_figure">
+                    <img src="img/boba3.webp" alt="pandora sieraad van C3PO" class="games_img">
+                </figure>
+                <section class="games_body">
+                    <h2 class="games_h2">€10.50</h2>
+                    <h3 class="games_h3">Creme brulee</h3>
+                    <div class="games_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <button data-product="c3po" class="games_button">add to cart</button>
+                </section>
+            </li>
+        </ul>
+    </main>
+
+</body>
+
+</html>
