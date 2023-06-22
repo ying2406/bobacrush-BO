@@ -5,8 +5,6 @@
   font-weight: 500rem;
 }
 
-
-
 html{
   font-size: 62.5%;
 }
@@ -463,7 +461,10 @@ button{
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  border: black solid;
+  border: #a492b2 solid;
+  background: rgb(170,59,121);
+  background: linear-gradient(0deg, rgba(170,59,121,1) 18%, rgba(164,146,176,1) 81%);
+  border-radius: 5%;
 }
 
 .stappenplan-item h3{
